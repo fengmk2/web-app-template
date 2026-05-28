@@ -3,7 +3,6 @@ allowBuilds:
 catalog:
   vite: npm:@voidzero-dev/vite-plus-core@latest
   vite-plus: https://pkg.pr.new/voidzero-dev/vite-plus@1588
-  vitest: ^4.1.5
 onlyBuiltDependencies:
   - '@swc/core'
   - '@tailwindcss/oxide'
