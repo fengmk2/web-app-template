@@ -13,7 +13,7 @@ const LocaleContext = createLocaleContext({
   clientLocales: [navigator.language, ...navigator.languages],
   loadLocale: async (locale: string) => {
     if (locale === 'ja-JP') {
-      return (await import('./translations/ja_JP.json')).default.ja_JP;
+      return (await import('./translations/ja-JP.json')).default['ja-JP'];
     }
 
     return {};
