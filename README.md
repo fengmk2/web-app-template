@@ -1,4 +1,4 @@
-# Starter Kit for Vite, React, TypeScript & Tailwind
+# Starter Kit for Vite+, React, TypeScript & Tailwind
 
 _Minimal, sensible defaults, fast._
 
@@ -9,7 +9,7 @@ Read [the blog post about this template](https://cpojer.net/posts/fastest-fronte
 
 ## Technologies
 
-- [Vite](https://vitejs.dev/)
+- [Vite+](https://viteplus.dev/)
 - [React](https://reactjs.org/) with [React Compiler](https://react.dev/learn/react-compiler) enabled
 - [Tailwind](https://tailwindcss.com/)
 - [fbtee](https://github.com/nkzw-tech/fbtee) for i18n
@@ -24,18 +24,19 @@ Check out the [`nkzw-tech/server-template`](https://github.com/nkzw-tech/server-
 ## Setup
 
 - Press the "Use this template" button on the top of this repository's GitHub page.
-- Run `pnpm install` (or `npm install` if you don't use `pnpm`).
-- Run `pnpm dev:setup`.
-- `pnpm dev` for development.
-- Use `pnpm test` to run tests.
-- `pnpm build` for production builds.
+- Run `pnpm install`.
+- Run `pnpm exec vp run dev:setup` to generate translations.
+- Run `pnpm exec vp dev` for development.
+- Run `pnpm exec vp test` to run tests.
+- Run `pnpm exec vp check` for formatting, lint, and type checks.
+- Run `pnpm exec vp build` for production builds.
 
 _Note: You can install `pnpm` via `homebrew` on macOS: `brew install pnpm`._
 
 ## Protips for the fastest Developer Experience
 
 - Use [`npm-run-all2`](https://github.com/bcomnes/npm-run-all2) to parallelize local test runs.
-- Use `oxlint` for linting and `oxfmt` for formatting.
+- Use `vp check` for linting, formatting, and type checks.
 
 ## I'm not using Better Auth
 
